@@ -70,14 +70,11 @@ This project is designed to be executed in a **Python 3.9+** environment. To ins
 
 ## 🚀 Usage
 
-Scripts in the `scripts/` folder should be designed to run from the command line and accept relevant arguments. For instance:
+Jupyter notebooks in the `notebooks/` folder should be designed to run from the command line and accept relevant arguments. For instance:
 
--   `fetch_rnacentral.py`: Query RNAcentral for tRNA-Sec sequences and save them to `data/raw/`.
--   `annotate_modifications.py`: Integrate modification data from MODOMICS and other sources.
+-   `fetch_and_explore.ipynb`: Query RNAcentral for tRNA-Sec sequences and save them to `data/raw/`.
 -   `align_sequences.py`: Perform multiple sequence alignment and phylogenetic tree construction.
 -   `predict_structures.py`: Run secondary structure predictions using ViennaRNA, NUPACK, or RNAstructure.
-
-Jupyter notebooks in the `notebooks/` directory can be used for exploratory analyses, visualization, and documentation of intermediate findings.
 
 ---
 
