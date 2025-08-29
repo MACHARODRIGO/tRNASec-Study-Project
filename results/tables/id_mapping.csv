@@ -1,0 +1,201 @@
+URS_ID,safe_species,description
+URS00001DA281_9606,Homo_sapiens,Homo sapiens (human) tRNA-SeC (anticodon TCA) 1-1 (TRU-TCA1-1)
+URS0000C8E9EB_9606,Homo_sapiens,Homo sapiens (human) tRNA-SeC (anticodon TCA) 2-1 (TRU-TCA2-1)
+URS00008FED48_9606,Homo_sapiens,"selenocysteine tRNA from Homo sapiens (PDB 4RQF, chain C)"
+URS000014E598_9606,Sec_from,"human Ser-tRNA-Sec from Homo sapiens (PDB 7ZJW, chain F)"
+URS00006501FF_9606,Homo_sapiens,Homo sapiens (human) Selenocysteine transfer RNA
+URS000073556F_9606,Homo_sapiens,Homo sapiens (human) Selenocysteine transfer RNA
+URS00006F0FC0_9606,Homo_sapiens,Homo sapiens (human) Selenocysteine transfer RNA
+URS00004315E3_9606,Homo_sapiens,Homo sapiens (human) tRNA-Ser
+URS0000624339_10090,Mus_musculus,"tRNA(Sec) from Mus musculus (PDB 3RG5, chain B)"
+URS000009B95D_6239,Caenorhabditis_elegans,Caenorhabditis elegans tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS00004CEF57_7227,Drosophila_melanogaster,Drosophila melanogaster (fruit fly) transfer RNA:Selenocysteine-TCA 1-1 (Dmel_CR30024)
+URS0000176051_10090,Mus_musculus,Mus musculus tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS00006FD6B3_6239,Caenorhabditis_elegans,Caenorhabditis elegans tRNA-SeC(e)
+URS00000692E6_7227,Drosophila_melanogaster,Drosophila melanogaster (fruit fly) tRNA-OTHER
+URS00006FD6F2_7227,Drosophila_melanogaster,Drosophila melanogaster (fruit fly) Selenocysteine transfer RNA
+URS00003B2198_10090,Mus_musculus,Mus musculus (house mouse) tRNA-Ser
+URS0002324047_7955,Danio_rerio,Danio rerio (zebrafish) Selenocysteine transfer RNA
+URS00006CB2B8_7955,Danio_rerio,Danio rerio (zebrafish) Selenocysteine transfer RNA
+URS000043400C_7955,Danio_rerio,Danio rerio tRNA-SeC (TCA) (tRNA-SeC-TCA-1 1 to 3)
+URS000232C248_7955,Danio_rerio,Danio rerio (zebrafish) Selenocysteine transfer RNA
+URS00002F9CDD_511145,Escherichia_coli,Escherichia coli str. K-12 substr. MG1655 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS0002318EF0_7227,Drosophila_melanogaster,Drosophila melanogaster (fruit fly) Selenocysteine transfer RNA
+URS0000EFA52B_5851,Plasmodium_knowlesi,Plasmodium knowlesi strain H tRNA tRNA
+URS00006C48DD_5855,Plasmodium_vivax,Plasmodium vivax (malaria parasite P. vivax) tRNA Selenocysteine
+URS0000EFA197_296543,Thalassiosira_pseudonana,Thalassiosira pseudonana CCMP1335 tRNA tRNA-Sec
+URS000027CA7B_36329,Plasmodium_falciparum,Plasmodium falciparum 3D7 tRNA Selenocysteine
+URS0000EFA438_5851,Plasmodium_knowlesi,Plasmodium knowlesi strain H tRNA tRNA-Sec
+URS0000BE9D73_74869,Anopheles_maculatus,Anopheles maculatus (Mosquito) tRNA tRNA-SeC(p)
+URS00005A30CB_693216,Cronobacter_turicensis,Cronobacter turicensis z3032 tRNA
+URS00002C228D_201089,Desulfobacterium_sp,uncultured Desulfobacterium sp. tRNA
+URS00000F9174_913028,Yersinia_enterocolitica,Yersinia enterocolitica W22703 tRNA
+URS000047201F_46245,Drosophila_pseudoobscura,Drosophila pseudoobscura pseudoobscura (Fruit fly) tRNA Dpse	RNA:GA29764
+URS00000D8D92_7217,Drosophila_ananassae,Drosophila ananassae (Fruit fly) tRNA Dana	RNA:GF25935
+URS00000D8D92_7220,Drosophila_erecta,Drosophila erecta (Fruit fly) tRNA Dere	RNA:GG25829
+URS00000D8D92_7245,Drosophila_yakuba,Drosophila yakuba (Fruit fly) tRNA Dyak	RNA:GE26939
+URS00004F4052_7222,Drosophila_grimshawi,Drosophila grimshawi (Fruit fly) tRNA Dgri	RNA:GH25728
+URS000052E9CE_7244,Drosophila_virilis,Drosophila virilis (Fruit fly) tRNA Dvir	RNA:GJ25178
+URS00004F4052_7230,Drosophila_mojavensis,Drosophila mojavensis (Fruit fly) tRNA Dmoj	RNA:GI25301
+URS0000496CAE_7238,Drosophila_sechellia,Drosophila sechellia (Fruit fly) tRNA Dsec	RNA:GM27433
+URS000047201F_7234,Drosophila_persimilis,Drosophila persimilis (Fruit fly) tRNA Dper	RNA:GL27829
+URS0000A6C2CA_5821,Plasmodium_berghei,Plasmodium berghei seC transfer RNA (tca)
+URS0000D4B859_5661,Leishmania_donovani,Leishmania donovani tRNA-Sec
+URS00009DE517_5826,Plasmodium_chabaudi,Plasmodium chabaudi adami seC transfer RNA (tca)
+URS00009DE517_31271,Plasmodium_chabaudi,Plasmodium chabaudi chabaudi seC transfer RNA (tca)
+URS0000D4B859_347515,Leishmania_major,Leishmania major strain Friedlin tRNA_selenocysteine
+URS00000B7399_5680,Leishmania_shawi,Leishmania shawi SeC transfer RNA (tca)
+URS0000504971_59799,Angomonas_deanei,Angomonas deanei SeC transfer RNA (tca)
+URS0000A52F5E_36330,Plasmodium_ovale,Plasmodium ovale (malaria parasite P. ovale) seC transfer RNA (tca)
+URS0000BF6A53_1317065,Phytophthora_parasitica,Phytophthora parasitica P1569 selenocysteine transfer RNA
+URS0000C50FBB_905079,Guillardia_theta,Guillardia theta CCMP2712 selenocysteine transfer RNA
+URS0000EFA563_1223558,Pythium_iwayamai,Pythium iwayamai DAOM BR242034 selenocysteine transfer RNA
+URS0000EFA0F4_1254522,Phytophthora_lateralis,Phytophthora lateralis MPF4 selenocysteine transfer RNA
+URS0000EFA232_347515,Leishmania_major,Leishmania major selenocysteine transfer RNA
+URS0000EFA428_1284355,Phytophthora_kernoviae,Phytophthora kernoviae 00238/432 selenocysteine transfer RNA
+URS0000BE6003_280463,Emiliania_huxleyi,Emiliania huxleyi CCMP1516 selenocysteine transfer RNA
+URS00000B7399_651832,Leishmania_lindenbergi,Leishmania lindenbergi SeC transfer RNA (tca)
+URS00000B7399_5678,Leishmania_naiffi,Leishmania naiffi SeC transfer RNA (tca)
+URS00000B7399_653362,Leishmania_utingensis,Leishmania utingensis SeC transfer RNA (tca)
+URS0000B192F6_5694,Trypanosoma_equiperdum,Trypanosoma equiperdum seC transfer RNA (tca)
+URS000096B318_7209,Loa_loa,Loa loa (Eye worm) selenocysteine transfer RNA
+URS000063E0DB_6945,Ixodes_scapularis,Ixodes scapularis (Black-legged tick) tRNA-SeC(e) for anticodon UCA
+URS000197EBEF_6945,Ixodes_scapularis,Ixodes scapularis (Black-legged tick) tRNA-SeC(e) for anticodon UCA
+URS000197E0D4_6945,Ixodes_scapularis,Ixodes scapularis (Black-legged tick) tRNA-SeC(e) for anticodon UCA
+URS0000177E81_39946,Indica_Group,Oryza sativa Indica Group (Indian rice) tRNA-SeC(p) for anticodon UCA
+URS000197CDD6_442651,Hofstenia_miamia,Hofstenia miamia (Panther worm) tRNA-SeC(e) for anticodon UCA
+URS0000668642_562,Escherichia_coli,Escherichia coli tRNA
+URS0000296430_6945,Ixodes_scapularis,Ixodes scapularis (Black-legged tick) tRNA-SeC(e) for anticodon UCA
+URS0000603899_352472,Dictyostelium_discoideum,Dictyostelium discoideum AX4 selenocysteine transfer RNA
+URS000037ED7F_6945,Ixodes_scapularis,Ixodes scapularis (Black-legged tick) tRNA-SeC(e) for anticodon UCA
+URS000017E011_759914,Brachyspira_pilosicoli,Brachyspira pilosicoli 95/1000 tRNA-Sec
+URS0000D4B859_420245,Leishmania_braziliensis,Leishmania braziliensis MHOM/BR/75/M2904 tRNA
+URS000004BB47_562,Escherichia_coli,Escherichia coli tRNA
+URS0000CDCE69_647221,Plasmodium_gaboni,Plasmodium gaboni tRNA Selenocysteine
+URS0000ED0590_287,Pseudomonas_aeruginosa,Pseudomonas aeruginosa tRNA-???(tcaa)
+URS0000B02643_85471,Plasmodium_relictum,Plasmodium relictum tRNA Selenocysteine
+URS00005FE6AC_5861,Plasmodium_yoelii,Plasmodium yoelii tRNA Selenocysteine
+URS0000AC0DEF_5849,Plasmodium_gallinaceum,Plasmodium gallinaceum tRNA Selenocysteine
+URS0000DF2507_2078785,Pseudomonas_sp,Pseudomonas sp. JV241A SeC tRNA
+URS0000CF631C_720590,Plasmodium_sp,Plasmodium sp. DRC-Itaito tRNA Selenocysteine
+URS000062C4CA_5823,Plasmodium_berghei,Plasmodium berghei ANKA tRNA Selenocysteine
+URS00005FE6AC_31271,Plasmodium_chabaudi,Plasmodium chabaudi chabaudi tRNA PCHAS_130542
+URS0000A655CB_720590,Plasmodium_sp,Plasmodium sp. DRC-Itaito tRNA Selenocysteine
+URS000064448A_5851,Plasmodium_knowlesi,Plasmodium knowlesi strain H tRNA Selenocysteine
+URS00004B84D6_287,Pseudomonas_aeruginosa,Pseudomonas aeruginosa partial Sec tRNA
+URS000012883F_69218,Enterobacter_cancerogenus,Enterobacter cancerogenus SeC(p) tRNA
+URS0000CD1D1C_880536,Plasmodium_sp,Plasmodium sp. gorilla clade G3 tRNA Selenocysteine
+URS0000D0C34A_880534,Plasmodium_sp,Plasmodium sp. gorilla clade G1 tRNA Selenocysteine
+URS0000D4B4EE_880535,Plasmodium_sp,Plasmodium sp. gorilla clade G2 tRNA Selenocysteine
+URS000009CF36_2773264,Serratia_sp,Serratia sp. Tan611 SeC(p) tRNA
+URS000080DE1A_2320,Methanopyrus_kandleri,"selenocysteine tRNA from Methanopyrus kandleri (PDB 3ADB, chain C)"
+URS000027138B_8355,Xenopus_laevis,Xenopus laevis (African clawed frog) selenocysteine tRNA SEC
+URS000041EA00_177439,Predicted_Se,Desulfotalea psychrophila LSv54 Predicted SeC(p) trna
+URS000012883F_546,Citrobacter_freundii,Citrobacter freundii SeC(p) tRNA
+URS0000791279_5823,Plasmodium_berghei,Plasmodium berghei ANKA tRNA berg13:tRNA:rfamscan:116536-116639
+URS0000B075AC_5858,Plasmodium_malariae,Plasmodium malariae tRNA
+URS0003410CE8_135740,Paracoccus_kondratievae,Paracoccus kondratievae tRNA
+URS000341C1CD_876,Desulfovibrio_desulfuricans,Desulfovibrio desulfuricans tRNA
+URS0002FF090D_157784,Zestomonas_thermotolerans,Zestomonas thermotolerans tRNA
+URS000340FE24_88431,Dorea_longicatena,Dorea longicatena tRNA
+URS00005FE6AC_5860,Plasmodium_vinckei,Plasmodium vinckei tRNA
+URS0000A0E1AC_165190,Collinsella_sp,uncultured Collinsella sp. tRNA
+URS00019C5548_2963089,Bilifractor_sp,uncultured Bilifractor sp. tRNA
+URS000014E598_9913,Bos_taurus,Bos taurus (cattle) tRNA
+URS0002254DFE_167968,Desulfovibrio_sp,uncultured Desulfovibrio sp. tRNA
+URS0003410408_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000340EF63_3031937,Chordicoccus_sp,uncultured Chordicoccus sp. tRNA
+URS0003416972_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS00034102DD_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0000058B15_360910,Bordetella_avium,Bordetella avium 197N tRNA
+URS0003416F49_2963089,Bilifractor_sp,uncultured Bilifractor sp. tRNA
+URS0003420433_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003408124_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000341391A_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000340B8EA_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000342162C_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000341B508_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003417A82_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS00022290E2_59620,Clostridium_sp,uncultured Clostridium sp. tRNA
+URS000341938C_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000222E4EE_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000341D73F_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000341B2C5_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0002245DB9_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003403377_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS000340B958_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003413B1E_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003414876_114710,Comamonas_sp,uncultured Comamonas sp. tRNA
+URS0003402BD3_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003403B6A_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003403D79_167968,Desulfovibrio_sp,uncultured Desulfovibrio sp. tRNA
+URS000340C1C2_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003406567_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003410A98_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0002FDD034_1118124,Moryella_sp,uncultured Moryella sp. tRNA
+URS00034049B1_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0003417578_765821,Blautia_sp,uncultured Blautia sp. tRNA
+URS00034194B5_2847326,Parafannyhessea_sp,uncultured Parafannyhessea sp. tRNA
+URS00034208DD_167968,Desulfovibrio_sp,uncultured Desulfovibrio sp. tRNA
+URS000052E4A1_657313,_Ruminococcus__torques_L2-14_tRNA,[Ruminococcus] torques L2-14 tRNA
+URS0003418CDE_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0002225DE4_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS00005FE6AC_119398,Plasmodium_vinckei,Plasmodium vinckei brucechwatti tRNA
+URS00026DA227_1904483,sheep_gut_metagenome_tRNA,sheep gut metagenome tRNA
+URS0001CA48BD_138297,Plasmodium_vinckei,Plasmodium vinckei lentum tRNA
+URS00003AB734_905079,Guillardia_theta,Guillardia theta CCMP2712 tRNA GUITHDRAFT_t76
+URS0000511088_508771,Toxoplasma_gondii,Toxoplasma gondii ME49 tRNA TGME49_321350
+URS00004DD8C0_717608,_Clostridium__cf._saccharolyticum_K10_tRNA,[Clostridium] cf. saccharolyticum K10 tRNA
+URS0002D7ADC2_3137852,Tenacibaculum_sp,Tenacibaculum sp. 190524A05c Pseudo tRNA
+URS0000D8E506_7370,Musca_domestica,Musca domestica (House fly) tRNA MDOA013181
+URS0000EF9DCA_315563,Belgica_antarctica,Belgica antarctica (Antarctic midge) tRNA IU25_tRNA_93
+URS0000177E81_273526,Serratia_marcescens,Serratia marcescens subsp. marcescens Db11 tRNA
+URS00005A30CB_941323,Escherichia_coli,Escherichia coli VR50 tRNA-Sec
+URS00005A30CB_199310,Escherichia_coli,Escherichia coli CFT073 Selenocysteine transfer RNA
+URS00005A30CB_155864,Escherichia_coli,Escherichia coli O157:H7 str. EDL933 tRNA-Sec
+URS00002C364D_1731,Peptoclostridium_acidaminophilum,Peptoclostridium acidaminophilum transfer RNA-selenocysteine
+URS00002F9CDD_90371,Salmonella_enterica,Salmonella enterica subsp. enterica serovar Typhimurium tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS0000AE336D_36330,Plasmodium_ovale,Plasmodium ovale (malaria parasite P. ovale) tRNA
+URS000077E5AF_28450,Burkholderia_pseudomallei,"Burkholderia pseudomallei tRNA SeC anticodon TCA, Cove score 22.87"
+URS00001372CF_384676,Pseudomonas_entomophila,Pseudomonas entomophila L48 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS000025EF76_413999,Clostridium_botulinum,Clostridium botulinum A str. ATCC 3502 tRNA SeC(p) (TCA)
+URS00000B1D7A_272560,Burkholderia_pseudomallei,"Burkholderia pseudomallei K96243 tRNA SeC anticodon TCA, Cove score 22.87"
+URS000018DFB6_9031,Gallus_gallus,Gallus gallus tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS000025EF76_941968,Clostridium_botulinum,"Clostridium botulinum H04402 065 tRNA SeC(p) anticodon TCA, Cove score 21.22"
+URS00005A30CB_220341,Salmonella_enterica,"Salmonella enterica subsp. enterica serovar Typhi str. CT18 tRNA SelC(p) anticodon TCA, Cove score 75.19"
+URS000027CA7B_5854,Plasmodium_reichenowi,Plasmodium reichenowi tRNA-Sec
+URS00021A3664_29158,Mytilus_galloprovincialis,Mytilus galloprovincialis (Mediterranean mussel) Selenocysteine transfer RNA
+URS000218F9E9_29158,Mytilus_galloprovincialis,Mytilus galloprovincialis (Mediterranean mussel) Selenocysteine transfer RNA
+URS000070CAB7_36329,Plasmodium_falciparum,Plasmodium falciparum 3D7 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS000080E0B2_224324,Aquifex_aeolicus,Aquifex aeolicus VF5 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS000018CF94_273068,Caldanaerobacter_subterraneus,Caldanaerobacter subterraneus subsp. tengcongensis MB4 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS00002F9CDD_591946,Escherichia_coli,Escherichia coli LF82 tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS00005D75C5_287,Pseudomonas_aeruginosa,Pseudomonas aeruginosa tRNA_SeC(p)_TCA
+URS00002F9CDD_562,Escherichia_coli,Escherichia coli tRNA-SeC (TCA) (tRNA-SeC-TCA-1-1)
+URS0000772343_1977087,Pseudomonadota_bacterium,Pseudomonadota bacterium tRNA-Sec
+URS0000B50670_2013728,Chloroflexi_bacterium,Chloroflexi bacterium HGW-Chloroflexi-5 tRNA-Sec
+URS0000B50670_2026735,Deltaproteobacteria_bacterium,Deltaproteobacteria bacterium tRNA-Sec
+URS0000B50670_2053627,Syntrophomonas_sp,Syntrophomonas sp. tRNA-Sec
+URS0000B1F89D_392333,Geoalkalibacter_ferrihydriticus,Geoalkalibacter ferrihydriticus tRNA_SeC(p)_TCA
+URS00006E3382_60137,Sulfitobacter_pontiacus,Sulfitobacter pontiacus Selenocysteine transfer RNA
+URS0000AF7EE8_335381,Friedmanniella_sp,uncultured Friedmanniella sp. tRNA-SeC(p)-TCA
+URS0000AD0ACA_2013753,Deltaproteobacteria_bacterium,Deltaproteobacteria bacterium HGW-Deltaproteobacteria-3 tRNA-Sec
+URS0000AD0ACA_2202153,Thermodesulfobacteriota_bacterium,Thermodesulfobacteriota bacterium tRNA-Sec
+URS00009DCAC5_1005665,Kosakonia_oryzendophytica,Kosakonia oryzendophytica tRNA_SeC(p)_TCA
+URS0000A11182_1780362,Campylobacter_geochelonis,Campylobacter geochelonis tRNA-seC(tca)
+URS0000AD28C5_562,Escherichia_coli,Escherichia coli tRNA-Sec
+URS00009DDAC1_2015350,Burkholderia_sp,Burkholderia sp. AU18528 tRNA-Sec
+URS0000C45FF6_1649647,Janthinobacterium_sp,Janthinobacterium sp. KBS0711 Selenocysteine transfer RNA
+URS0000AD3CA5_3055594,Desulfobacterales_bacterium,Desulfobacterales bacterium HSG16 tRNA-Sec
+URS0000C7ACF0_1300342,Dokdonella_koreensis,Dokdonella koreensis DS-123 Selenocysteine transfer RNA
+URS0000A1265B_1703773,candidate_division_TA06_bacterium_SM1_40_tRNA-Sec,candidate division TA06 bacterium SM1_40 tRNA-Sec
+URS0000A1265B_1703774,candidate_division_TA06_bacterium_SM23_40_tRNA-Sec,candidate division TA06 bacterium SM23_40 tRNA-Sec
+URS0000C4823B_1736429,Rhizobium_sp,Rhizobium sp. Root1212 Selenocysteine transfer RNA
+URS0000AFC6C9_1797613,Chloroflexi_bacterium,Chloroflexi bacterium GWB2_54_36 tRNA-Sec
+URS0000AFC6C9_1872519,Anaerolinea_sp,Anaerolinea sp. (freshwater metagenome) tRNA-Sec
+URS0000AFC6C9_2024896,Anaerolineaceae_bacterium,Anaerolineaceae bacterium (groundwater metagenome) tRNA-Sec
+URS0000C96ADE_2024894,Acidimicrobiaceae_bacterium,Acidimicrobiaceae bacterium tRNA-Sec
+URS0000C96ADE_2900548,Actinomycetota_bacterium,Actinomycetota bacterium tRNA-Sec
+URS0000A13594_1265311,Mycobacterium_arosiense,Mycobacterium arosiense ATCC BAA-1401 = DSM 45069 tRNA-Sec
+URS0000A13594_1785,Mycobacterium_sp,Mycobacterium sp. tRNA-Sec
+URS0000A13594_1834071,Mycobacterium_sp,Mycobacterium sp. 1165196.3 tRNA-Sec
