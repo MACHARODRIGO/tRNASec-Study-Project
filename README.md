@@ -73,14 +73,12 @@ This project is designed to be executed in a **Python 3.9+** environment. To ins
 Jupyter notebooks in the `notebooks/` folder should be designed to run from the command line and accept relevant arguments. For instance:
 
 -   `fetch_and_explore.ipynb`: Query RNAcentral for tRNA-Sec sequences and save them to `data/raw/`.
--   `align_sequences.py`: Perform multiple sequence alignment and phylogenetic tree construction.
--   `predict_structures.py`: Run secondary structure predictions using ViennaRNA, NUPACK, or RNAstructure.
+-   `align_sequences_prediction.ipynb`: Perform multiple sequence alignment with `Infernal` and phylogenetic tree construction. Run secondary structure predictions using `ViennaRNA`.
 
 ---
 
 ## ✅ Reproducibility
 
-For reproducible results, record the versions of all external tools and databases used. Wherever possible, run scripts with deterministic random seeds and provide the input data and output in the repository. Document the workflow clearly in notebooks and commit changes regularly.
 
 ---
 
