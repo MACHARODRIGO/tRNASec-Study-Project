@@ -17,7 +17,7 @@ Also requires external tools (cmalign, esl-reformat, FastTree).
 import os
 from collections import Counter
 from Bio import Phylo, SeqIO
-
+from IPython.display import display, Markdown
 
 # =====================================================
 # 1. Convert CSV to FASTA
@@ -75,49 +75,78 @@ def convert_csv_to_fasta(csv_path, fasta_path, mapping_file="../results/tables/i
 # =====================================================
 # 2. Alignment pipeline (Infernal)
 # =====================================================
-def run_cmalign(fasta_wsl, sto_windows, cmalign_bin, cm_model):
-    """Run cmalign (Infernal) through WSL."""
-    import subprocess
-    print("⏳ Running cmalign...")
+def run_cmalign(cmalign_bin, cm_model, fasta_wsl, sto_wsl, timeout=600):
+    """Run cmalign correctly for unaligned sequences"""
+    import subprocess, time
+    
+    print("⏳ Running cmalign for unaligned sequences...")
+    print("⚠️ This may take several minutes depending on sequence count")
+    
+    start_time = time.time()
     try:
-        with open(sto_windows, "w") as sto_out:
-            subprocess.run(["wsl", cmalign_bin, cm_model, fasta_wsl],
-                           stdout=sto_out, check=True)
-        print(f"✅ Stockholm file saved: {sto_windows}")
-    except subprocess.CalledProcessError as e:
-        print("❌ Error running cmalign:", e)
+        # CORRECT ORDER: cmalign -o output.cm cm_model.cm input.fasta
+        result = subprocess.run(
+            ["wsl", cmalign_bin, "-o", sto_wsl, cm_model, fasta_wsl],
+            capture_output=True,
+            text=True,
+            timeout=timeout
+        )
+        
+        elapsed = time.time() - start_time
+        print(f"⏱️ Execution time: {elapsed:.2f} seconds")
+        print(f"Exit code: {result.returncode}")
+        
+        if result.stderr:
+            print(f"stderr (first 300 chars):\n{result.stderr[:300]}...\n")
+        
+        if result.returncode == 0:
+            print(f"✅ Success! Stockholm file generated: {sto_wsl}")
+        else:
+            print("❌ cmalign failed")
+    
+    except subprocess.TimeoutExpired:
+        print(f"❌ cmalign timeout - {timeout/60} minutes was not enough")
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
 
 
-def run_esl_reformat(sto_wsl, aligned_windows, esl_reformat_bin):
-    """Run esl-reformat to convert Stockholm to aligned FASTA."""
+def run_esl_reformat(sto_wsl, aligned_wsl, esl_reformat_bin):
+    """Alternative method using stdout redirection"""
     import subprocess
-    print("⏳ Running esl-reformat...")
+    print("🔄 Trying alternative esl-reformat method...")
+    
     try:
-        with open(aligned_windows, "w") as fasta_out:
-            subprocess.run(["wsl", esl_reformat_bin, "afa", sto_wsl],
-                           stdout=fasta_out, check=True)
-        print(f"✅ Aligned FASTA file saved: {aligned_windows}")
-    except subprocess.CalledProcessError as e:
-        print("❌ Error running esl-reformat:", e)
+        # Método alternativo: usar stdout en lugar de -o
+        result = subprocess.run(
+            ["wsl", esl_reformat_bin, "afa", sto_wsl],
+            capture_output=True,
+            text=True,
+            check=True,
+            timeout=120
+        )
+        
+        if result.returncode == 0:
+            # Guardar manualmente el output
+            with open(aligned_wsl.replace('/mnt/c/', 'C:/').replace('/', '\\'), 'w') as f:
+                f.write(result.stdout)
+            print(f"✅ Aligned FASTA generated (alternative method): {aligned_wsl}")
+        else:
+            print(f"❌ Alternative method failed: {result.stderr[:200]}")
+            
+    except Exception as e:
+        print(f"❌ Alternative method error: {e}")
 
 
 def preview_alignment(aligned_windows, n=20):
-    """Preview the first lines of the alignment."""
+    """Muestra las primeras líneas del alineamiento"""
+    import os
     if os.path.exists(aligned_windows):
-        print("\n📖 Alignment preview:")
+        print("\n📖 Vista previa del alineamiento:")
         with open(aligned_windows, "r") as f:
             for line in f.readlines()[:n]:
                 print(line.strip())
     else:
-        print("⚠️ Aligned file not found.")
-
-
-def run_alignment_pipeline(fasta_wsl, sto_windows, sto_wsl, aligned_windows,
-                           cmalign_bin, cm_model, esl_reformat_bin, preview_lines=20):
-    """Full alignment pipeline: cmalign + esl-reformat + preview."""
-    run_cmalign(fasta_wsl, sto_windows, cmalign_bin, cm_model)
-    run_esl_reformat(sto_wsl, aligned_windows, esl_reformat_bin)
-    preview_alignment(aligned_windows, n=preview_lines)
+        print("⚠️ No existe el archivo de alineamiento.")
 
 
 # =====================================================
@@ -168,8 +197,13 @@ def visualize_tree_radial(tree_file, out_image="../results/figures/tree_radial.p
 
 
 # =====================================================
-# 5. Tree Interpretation (Markdown report)
+# 5. Tree Interpretation (Markdown report for Notebook)
 # =====================================================
+import os
+from collections import Counter
+from Bio import Phylo
+from IPython.display import display, Markdown
+
 def find_maximal_clades(clades):
     """Filter clades to keep only the maximals (remove subsets)."""
     maximal = []
@@ -185,7 +219,9 @@ def find_maximal_clades(clades):
 
 
 def interpret_tree_markdown(tree_file, min_clade_size=4, support_cutoff=0.7, report_file="../results/tables/tree_report.md"):
-    """Interpret phylogenetic tree and generate a Markdown report."""
+    """Interpret phylogenetic tree and generate a Markdown report.
+       Shows it nicely in Jupyter Notebook and saves it to disk.
+    """
     if not os.path.exists(tree_file):
         print(f"❌ Tree file not found: {tree_file}")
         return
@@ -196,79 +232,153 @@ def interpret_tree_markdown(tree_file, min_clade_size=4, support_cutoff=0.7, rep
 
     report = []
     report.append("# 📖 Automatic interpretation of the phylogenetic tree\n")
-    report.append(f"- Total number of sequences: **{n_total}**\n")
+    report.append(f"- **Total sequences in tree:** {n_total}\n")
 
     # --- Global species count
     species = [str(leaf).split("|")[1].strip() for leaf in leaves if "|" in str(leaf)]
     sp_counts = Counter(species)
-    report.append("## 🧾 Most frequent species\n")
-    for sp, c in sp_counts.most_common(10):
-        report.append(f"- {sp}: {c} sequences")
 
+    report.append("## 🧾 Most frequent species\n")
+    report.append("| Rank | Species | # Sequences |")
+    report.append("|------|---------|-------------|")
+    for i, (sp, c) in enumerate(sp_counts.most_common(10), start=1):
+        report.append(f"| {i} | {sp} | {c} |")
+
+    # --- Largest clades
+    clades = find_maximal_clades(tree.get_nonterminals())
+    big_clades = [c for c in clades if len(c.get_terminals()) >= min_clade_size]
+
+    if big_clades:
+        report.append("\n## 🌳 Major clades detected\n")
+        report.append(f"Clades with at least **{min_clade_size} sequences** and support > {support_cutoff}:\n")
+        for i, cl in enumerate(big_clades, start=1):
+            sp_list = [str(leaf).split('|')[1] if '|' in str(leaf) else str(leaf) for leaf in cl.get_terminals()]
+            sp_summary = Counter(sp_list).most_common(3)
+            support = getattr(cl, "confidence", None)
+            report.append(f"- **Clade {i}:** {len(cl.get_terminals())} seqs | Support: {support if support else 'n/a'}")
+            report.append(f"  - Main species: {', '.join([f'{s} ({c})' for s, c in sp_summary])}")
+
+    # Save to file
     os.makedirs(os.path.dirname(report_file), exist_ok=True)
     with open(report_file, "w", encoding="utf-8") as f:
         f.write("\n".join(report))
 
+    # 👇 Show pretty output inside Jupyter
+    display(Markdown("\n".join(report)))
+
     print(f"✅ Report saved: {report_file}")
-
-
+    
 # =====================================================
 # 6. Generate Sequence Logo
 # =====================================================
-def generate_sequence_logo(alignment_fasta, out_logo="../results/figures/tRNA_logo.png", gap_threshold=0.9):
+def generate_sequence_logo(
+    alignment_fasta,
+    out_logo="../results/figures/tRNA_logo.png",
+    gap_threshold=0.9,
+    scale_factor=0.35  # 👈 controls how wide the figure will be
+):
     """
     Generate a sequence logo from a multiple alignment.
-    - alignment_fasta: aligned FASTA file
-    - out_logo: PNG output path
-    - gap_threshold: discard columns with >90% gaps
+    
+    Parameters
+    ----------
+    alignment_fasta : str
+        Path to the aligned FASTA file.
+    out_logo : str
+        Output path for the PNG logo.
+    gap_threshold : float
+        Discard alignment columns with more than this fraction of gaps (default = 0.9).
+    scale_factor : float
+        Controls figure width scaling (default = 0.35, increase if letters look cramped).
     """
+    import os
     import pandas as pd
     import matplotlib.pyplot as plt
     import logomaker
+    from Bio import SeqIO
+    from IPython.display import Image, display
 
+    # --- Check input
     if not os.path.exists(alignment_fasta):
         print(f"❌ Alignment file not found: {alignment_fasta}")
         return
 
+    # --- Load sequences
     seqs = [str(record.seq) for record in SeqIO.parse(alignment_fasta, "fasta")]
     df = pd.DataFrame([list(seq) for seq in seqs])
 
-    # Filter gap-rich columns
+    # --- Filter gap-rich columns
     gap_fraction = (df == "-").sum() / len(df)
     df = df.loc[:, gap_fraction < gap_threshold]
     df.replace("-", pd.NA, inplace=True)
 
-    # Frequency matrix
+    # --- Build frequency matrix
     freq_matrix = pd.DataFrame(
         {i: df[i].value_counts(normalize=True) for i in df.columns}
     ).fillna(0).T
 
+    # --- Ensure output directory exists
     os.makedirs(os.path.dirname(out_logo), exist_ok=True)
 
-    fig, ax = plt.subplots(figsize=(max(10, freq_matrix.shape[0] * 0.2), 6))
-    logo = logomaker.Logo(freq_matrix, ax=ax, shade_below=.5, fade_below=.5, color_scheme="classic")
-    logo.style_spines(visible=False)
-    logo.style_spines(spines=['left', 'bottom'], visible=True)
-    logo.style_xticks(rotation=90)
-    logo.ax.set_ylabel('Frequency')
+    # --- Plot logo
+    fig_width = max(12, freq_matrix.shape[0] * scale_factor)
+    fig, ax = plt.subplots(figsize=(fig_width, 6))
 
-    plt.savefig(out_logo, dpi=300, bbox_inches='tight')
+    logo = logomaker.Logo(
+        freq_matrix,
+        ax=ax,
+        color_scheme="classic",
+        width=1.0,     # 👈 width of each column (increase for more separation)
+        vpad=0.1,
+        show_spines=False
+    )
+
+    # --- Clean style
+    logo.ax.set_ylabel('Frequency')
+    logo.ax.set_xticks(range(0, freq_matrix.shape[0], 10))   # tick marks every 10 positions
+    logo.ax.set_xticklabels(range(0, freq_matrix.shape[0], 10))
+    logo.ax.grid(False)
+
+    # --- Save and close
+    plt.savefig(out_logo, dpi=300, bbox_inches='tight', transparent=True)
     plt.close(fig)
-    print(f"✅ Sequence logo saved: {out_logo}")
+
+    # --- Show inline in Jupyter
+    display(Image(filename=out_logo))
+    print(f"✅ Sequence logo saved and displayed: {out_logo}")
 
 
 # =====================================================
 # 7. RNA Secondary Structures by Species (ViennaRNA)
 # =====================================================
-def plot_rna_by_species(fasta_file, out_dir="../results/figures/rna_plots_by_species", max_per_fig=12):
+def plot_rna_by_species(
+    fasta_file,
+    out_dir="../results/figures/rna_plots_by_species",
+    max_per_fig=12,
+    total_figures=None   # 👈 global hard limit across ALL species
+):
     """
     Generate RNA secondary structure plots by species using ViennaRNA.
-    Each subplot shows URS ID + minimum free energy (MFE).
+
+    Parameters
+    ----------
+    fasta_file : str
+        Path to input FASTA file.
+    out_dir : str
+        Directory to save figures.
+    max_per_fig : int
+        Maximum sequences per figure (default = 12).
+    total_figures : int or None
+        If set, stops after generating this many figures in total across all species.
+        If None (default), generate all.
     """
+    import os
     import re
     import matplotlib.pyplot as plt
     import matplotlib.image as mpimg
+    from Bio import SeqIO
     import ViennaRNA as RNA
+    from IPython.display import display, Image
 
     os.makedirs(out_dir, exist_ok=True)
 
@@ -286,12 +396,19 @@ def plot_rna_by_species(fasta_file, out_dir="../results/figures/rna_plots_by_spe
 
     print(f"📥 {len(sequences)} sequences loaded, grouped into {len(species_groups)} species.")
 
+    global_count = 0
+
     for species_id, info in species_groups.items():
         species_name = info["name"]
         group = info["records"]
         print(f"\nGenerating figures for species: {species_name} ({len(group)} sequences)")
 
         for i in range(0, len(group), max_per_fig):
+            # --- HARD STOP condition
+            if total_figures is not None and global_count >= total_figures:
+                print(f"⏹️ Global limit of {total_figures} figures reached. Stopping.")
+                return
+
             block = group[i:i+max_per_fig]
             fig, axes = plt.subplots(3, 4, figsize=(18, 14))
             axes = axes.flatten()
@@ -322,6 +439,7 @@ def plot_rna_by_species(fasta_file, out_dir="../results/figures/rna_plots_by_spe
                 ax.set_title(f"{urs_id}\nMFE={mfe:.2f}", fontsize=9)
                 ax.axis("off")
 
+            # Hide empty subplots
             for k in range(len(block), len(axes)):
                 axes[k].axis("off")
 
@@ -333,3 +451,10 @@ def plot_rna_by_species(fasta_file, out_dir="../results/figures/rna_plots_by_spe
             plt.close(fig)
 
             print(f"✅ Figure saved: {output_fig_path}")
+
+            # Show preview only for the first figure
+            if global_count == 0:
+                display(Image(filename=output_fig_path))
+
+            # increment global counter
+            global_count += 1

@@ -36,3 +36,6 @@ cmalign_bin      = "/usr/bin/cmalign"
 esl_reformat_bin = "/home/ro-ma/infernal_models/infernal/easel/miniapps/esl-reformat"
 cm_model         = "/home/ro-ma/infernal_models/infernal/RF01852.cm"
 fasttree_exe     = r"C:\Program Files\FastTree\FastTree.exe"
+
+
+
