@@ -1,0 +1,926 @@
+<!--
+Copyright [2009-2017] EMBL-European Bioinformatics Institute
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!--
+Copyright [2009-2017] EMBL-European Bioinformatics Institute
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="rnacentralApp" ng-cloak>
+    <head>
+        
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="viewport" content="width=device-width">
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@RNAcentral">
+            <meta name="twitter:creator" content="@RNAcentral">
+            <meta name="twitter:title" content="RNAcentral">
+            <meta name="twitter:image" content="https://rnacentral.org/static/img/logo/rnacentral-logo.png">
+        
+        <base href="/"/>
+
+        <title>
+            
+Page not found
+
+        </title>
+
+        <link rel="stylesheet" href="/static/CACHE/css/output.c864fe4dd4b9.css" type="text/css">
+
+        
+
+        <!-- Favicons -->
+        <link rel="shortcut icon"                    href="/static/img/icons/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon"                 href="/static/img/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57"   href="/static/img/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60"   href="/static/img/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72"   href="/static/img/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76"   href="/static/img/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/img/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/img/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/img/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/icons/apple-touch-icon-152x152.png" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-37T22PHH90"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-37T22PHH90');
+        </script>
+
+        
+    </head>
+
+    <body class="level2" ng-controller="MainContent">
+        <header>
+        <!--
+Copyright [2009-2017] EMBL-European Bioinformatics Institute
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+
+
+
+<div class="navbar navbar-default navbar-static-top">
+
+  <div class="container rnacentral-masthead">
+
+    <!-- global-search -->
+    <div class="row" style="min-height: 120px;">
+      <div class="col-md-4">
+        <a href="/"><img src="/static/img/logo/rnacentral-logo-lightgrey.png" alt="RNAcentral logo" class="rnacentral-header-logo"></a>
+      </div>
+      <text-search-bar class="col-md-8"></text-search-bar>
+    </div><!-- /row -->
+    <!-- /global-search -->
+
+  </div>
+
+  <div class="container rnacentral-masthead-menu">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <p class="navbar-text">
+        <span class="badge release-number">v25</span>
+      </p>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Databases <b class="caret"></b></a>
+          <ul class="dropdown-menu multi-column columns-2">
+            <div class="row" style="max-height: 400px; overflow: auto;">
+              
+                
+                  <div class="col-sm-5">
+                    <ul class="multi-column-dropdown">
+                
+                <li>
+                  <a href="/expert-database/5srrnadb">5SrRNAdb</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/dictybase">dictyBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ena">ENA</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ensembl">Ensembl</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ensembl_fungi">Ensembl Fungi</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ensembl_metazoa">Ensembl Metazoa</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ensembl_plants">Ensembl Plants</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ensembl_protists">Ensembl Protists</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ensembl_gencode">Ensembl/GENCODE</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/evlncrnas">EVLncRNAs</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/expression_atlas">Expression Atlas</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/flybase">FlyBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/genecards">GeneCards</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/greengenes">Greengenes</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/gtrnadb">GtRNAdb</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/hgnc">HGNC</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/intact">IntAct</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/lncbase">LncBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/lncbook">LncBook</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/lncipedia">LNCipedia</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/lncrnadb">lncRNAdb</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/malacards">MalaCards</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/mgi">MGI</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/mgnify">MGnify</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/mirbase">miRBase</a>
+                </li>
+                
+                    </ul>
+                  </div>
+                
+              
+                
+                  <div class="col-sm-7">
+                    <ul class="multi-column-dropdown">
+                
+                <li>
+                  <a href="/expert-database/mirgenedb">MirGeneDB</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/modomics">Modomics</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/noncode">NONCODE</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/pdbe">PDBe</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/pirbase">piRBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/plncdb">PLncDB</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/pombase">PomBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/psicquic">PSICQUIC</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/rdp">RDP</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/rediportal">REDIportal</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/refseq">RefSeq</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/rfam">Rfam</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/rgd">RGD</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ribocentre">Ribocentre</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/ribovision">RiboVision</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/sgd">SGD</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/silva">SILVA</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/snodb">snoDB</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/snopy">snOPY</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/snornadb">snoRNA Database</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/srpdb">SRPDB</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/tair">TAIR</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/tarbase">TarBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/tmrna-website">tmRNA Website</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/wormbase">WormBase</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/zfin">ZFIN</a>
+                </li>
+                
+              
+                
+                <li>
+                  <a href="/expert-database/zwd">ZWD</a>
+                </li>
+                
+                    </ul>
+                  </div>
+                
+              
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+              <ul class="multi-column-dropdown">
+                <li class="divider"></li>
+                <li><a href="/expert-databases">All databases</a></li>
+              </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Tools<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/sequence-search/">Sequence search</a></li>
+            <li><a href="/r2dt">R2DT: visualise RNA 2D structure</a></li>
+            <li><a href="/help/public-database">Public Postgres database</a></li>
+            <li><a href="/genome-browser">Genome browser</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">API<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/api/v1/">Browsable API</a></li>
+            <li><a href="/api">API Documentation</a></li>
+            <li><a href="/api/schema/swagger-ui/" target="_blank">OpenAPI Schema</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/downloads">Downloads</a></li>
+        <li><a href="/search?q=RNA">Browse</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/about-us">About</a>
+        </li>
+        <li>
+          <a href="/help">Help</a>
+        </li>
+        <li><a href="" class="doorbell-feedback help" title="Send quick feedback without leaving the page">Feedback <i class="fa fa-comment"></i></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+
+</div>
+
+        </header>
+
+        <div class="container">
+
+          <div class="container-main">
+            <!--[if lt IE 10]>
+              <div class="alert alert-danger">
+                You are using an <strong>outdated browser</strong> and as a result this website may not function as intended. Please <a href="http://whatbrowser.org/">upgrade your browser</a> to improve your experience.</p>
+              </div>
+            <![endif]-->
+
+            <noscript>
+              <div class="alert alert-danger">
+                Javascript is currently disabled or is not supported by this browser. Please enable JavaScript for full functionality.
+              </div>
+            </noscript>
+
+            <div ng-show="!displaySearchInterface">
+              
+              
+
+<h2><i class="fa fa-exclamation-triangle"></i> Page not found</h2>
+
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      Sorry, the page you're looking for cannot be found.
+      Check our <a href="/help">Help</a> or go to the <a href="/">home page</a>.
+    </p>
+  </div>
+</div>
+
+
+            </div>
+            <text-search-results ng-if="displaySearchInterface"></text-search-results>
+          </div>
+
+          <footer>
+            <div id="local-footer">
+              
+            </div>
+            <!--
+Copyright [2009-2017] EMBL-European Bioinformatics Institute
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+
+
+
+<div id="global-footer" class="row">
+
+  <nav id="global-nav-expanded" class="col-md-12">
+
+    <div class="col-md-2 col-sm-12 col-xs-12">
+      <br>
+      <br>
+      <a href="http://www.ebi.ac.uk/" class="no-icon" target="_blank" title="European Bioinformatics Institute homepage">
+          <img src="/static/img/logo/embl-ebi.jpg" alt="EMBL-EBI logo" class="ebi-img">
+      </a>
+      <a href="http://wellcome.ac.uk/" class="no-icon" target="_blank" title="Wellcome homepage">
+          <img src="/static/img/logo/wellcome-logo-black.png" alt="Wellcome logo" class="wellcome-img">
+      </a>
+    </div>
+
+    <div class="col-md-8 col-sm-8 col-xs-12">
+      <h3 class="about">
+        RNAcentral Expert Databases
+      </h3>
+
+      
+
+      
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <ul>
+          
+              
+              <li><a class="no-icon" href="/expert-database/5srrnadb">5SrRNAdb</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/dictybase">dictyBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ena">ENA</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ensembl">Ensembl</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ensembl_fungi">Ensembl Fungi</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ensembl_metazoa">Ensembl Metazoa</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ensembl_plants">Ensembl Plants</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ensembl_protists">Ensembl Protists</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ensembl_gencode">Ensembl/GENCODE</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/evlncrnas">EVLncRNAs</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/expression_atlas">Expression Atlas</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/flybase">FlyBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/genecards">GeneCards</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/greengenes">Greengenes</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/gtrnadb">GtRNAdb</a></li>
+              
+          
+          </ul>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <ul>
+          
+              
+              <li><a class="no-icon" href="/expert-database/hgnc">HGNC</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/intact">IntAct</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/lncbase">LncBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/lncbook">LncBook</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/lncipedia">LNCipedia</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/lncrnadb">lncRNAdb</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/malacards">MalaCards</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/mgi">MGI</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/mgnify">MGnify</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/mirbase">miRBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/mirgenedb">MirGeneDB</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/modomics">Modomics</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/noncode">NONCODE</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/pdbe">PDBe</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/pirbase">piRBase</a></li>
+              
+          
+          </ul>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <ul>
+          
+              
+              <li><a class="no-icon" href="/expert-database/plncdb">PLncDB</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/pombase">PomBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/psicquic">PSICQUIC</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/rdp">RDP</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/rediportal">REDIportal</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/refseq">RefSeq</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/rfam">Rfam</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/rgd">RGD</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ribocentre">Ribocentre</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/ribovision">RiboVision</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/sgd">SGD</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/silva">SILVA</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/snodb">snoDB</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/snopy">snOPY</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/snornadb">snoRNA Database</a></li>
+              
+          
+          </ul>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 col-xs-6">
+          <ul>
+          
+              
+              <li><a class="no-icon" href="/expert-database/srpdb">SRPDB</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/tair">TAIR</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/tarbase">TarBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/tmrna-website">tmRNA Website</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/wormbase">WormBase</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/zfin">ZFIN</a></li>
+              
+          
+              
+              <li><a class="no-icon" href="/expert-database/zwd">ZWD</a></li>
+              
+          
+          </ul>
+        </div>
+      
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <h3 class="about">Information</h3>
+      <ul>
+        <li><a href="/about-us">About RNAcentral</a></li>
+        <li><a href="/expert-databases">Expert Databases</a></li>
+        <li><a href="https://blog.rnacentral.org">Blog</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/training">Training</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/status">Website status</a></li>
+        <li><a class="no-icon" href="https://github.com/RNAcentral/" target="_blank">Code on GitHub</a></li>
+        <li><a href="/license">License</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-12">
+      <p class="text-muted text-center">
+        <br>
+        <a class="no-icon" href="https://creativecommons.org/share-your-work/public-domain/cc0/" target="_blank"><img src="/static/img/icons/CC0.png" alt="CC0 license icon"></a>
+        <small>All RNAcentral data are freely available under the Creative Commons Zero license (CC0)</small>
+      </p>
+    </div>
+
+  </nav>
+
+</div>
+
+<br>
+
+          </footer>
+
+        </div> <!-- container -->
+
+        <div id="data-protection-message-configuration" data-message="This website requires cookies and limited processing of your personal data in order to function. By using this site you are agreeing to this as outlined in our <a class='white-color' href='/static/privacy-notice.pdf'>Privacy Policy</a> and <a href='https://www.ebi.ac.uk/about/terms-of-use'>Terms of Use</a>." data-service-id="myService" data-data-protection-version="0.1"></div>
+
+
+        <script src="/static/CACHE/js/output.cfb0b16ab1f0.js"></script>
+
+        <!-- bootstrap conflicts with jquery-ui tooltip, so it should go after datatables -->
+        <script src="/static/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+        <script>
+            $(function() {
+              // record javascript errors for selenium
+              window.onerror=function(msg){
+                  $("body").attr("JSError",msg);
+              };
+              // initialise bootstrap tooltips
+              $('.help').tooltip();
+            });
+            if(!window.console){ window.console = {log: function(){} }; }
+            console.log('Welcome to the RNAcentral javascript console!');
+        </script>
+
+        <script>
+            (function(){
+              var x = document.getElementById("show-message");
+              if (x) {
+                  x.className = "show";
+                  // After 5 seconds, remove the show class from DIV
+                  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+              }
+            })();
+        </script>
+
+        <!--[if lte IE 8]>
+        <script type="text/javascript">
+            // bootstrap angular.js manually on IE < 8
+            $(document).ready(function() {
+                angular.bootstrap(document);
+            });
+        </script>
+        <![endif]-->
+
+        
+        
+
+        <!--Doorbell.io feedback-->
+        <script type="text/javascript">
+            window.doorbellOptions = {
+                appKey: 'iPUykwSlDQ7fuIHlRux5tNce109WQyyUYCAyksCG41X57V793oTm0w4VCx7nSlbC',
+                hideButton: true,
+                strings: {
+                  'email-input-placeholder': 'Your email (optional)',
+                  'intro-text': 'The <strong>current URL</strong> and your <strong>browser</strong> version are sent automatically',
+                }
+            };
+            (function(d, t) {
+                var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/2991?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g);
+            }(document, 'script'));
+            $(function(){
+              $('.doorbell-feedback').on('click', function(){
+                doorbell.show();
+              });
+            });
+            function changePlaceholder(){
+              document.getElementsByName('message')[0].placeholder='Is this a useful summary? Let us know how to improve the automatically generated summary';
+            }
+        </script>
+        <!--Doorbell.io feedback-->
+
+        <script>
+          var global_settings = {
+            EBI_SEARCH_ENDPOINT: 'https://www.ebi.ac.uk/ebisearch/ws/rest/rnacentral',
+          };
+        </script>
+    </body>
+</html>
