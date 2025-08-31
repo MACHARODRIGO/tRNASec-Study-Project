@@ -75,13 +75,18 @@ Jupyter notebooks in the `notebooks/` folder should be designed to run from the 
 -   `fetch_and_explore.ipynb`: Query RNAcentral for tRNA-Sec sequences and save them to `data/raw/`.
 -   `align_sequences_prediction.ipynb`: Perform multiple sequence alignment with `Infernal` and phylogenetic tree construction. Run secondary structure predictions using `ViennaRNA`.
 -   `trnasec_structural_exploration.ipynb`: Analyze secondary and tertiary structures of tRNA-Sec across domains of life, identify non-canonical motifs, and (optionally) run MD simulations.
+- `rna_ml_exploration.ipynb`: Extract sequence/structural features, perform clustering of RNAs, and train baseline ML classifiers for exploratory prediction tasks.
 
 ---
 ## 📌 Work in Progress
 - `fetch_and_explore.ipynb`: ✅ completed
 - `align_sequences_prediction.ipynb`: ⏳ completed
 - `trnasec_structural_exploration.ipynb`: ✅ analysis complete, refactor pending
-
+- `rna_ml_exploration.ipynb`: 🚧 planned  
+  - Feature extraction (motifs, modifications, structure).  
+  - Unsupervised clustering of RNAs.  
+  - Baseline ML classifiers (logistic regression, RF, MLP).  
+  - Run locally (CPU) or on Colab (GPU).  
 ---
 
 ## ✅ Reproducibility
