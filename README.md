@@ -77,6 +77,12 @@ Jupyter notebooks in the `notebooks/` folder should be designed to run from the 
 -   `trnasec_structural_exploration.ipynb`: Analyze secondary and tertiary structures of tRNA-Sec across domains of life, identify non-canonical motifs, and (optionally) run MD simulations.
 
 ---
+## 📌 Work in Progress
+- `fetch_and_explore.ipynb`: ✅ completed
+- `align_sequences_prediction.ipynb`: ⏳ completed
+- `trnasec_structural_exploration.ipynb`: ✅ analysis complete, refactor pending
+
+---
 
 ## ✅ Reproducibility
 
