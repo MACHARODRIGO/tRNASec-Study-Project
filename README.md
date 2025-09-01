@@ -36,13 +36,10 @@ project/
 │   ├── figures/            # 🖼️ figures generated during analyses
 │   └── tables/             # 📈 summary tables and intermediate outputs
 │
-├── docs/
-│   └── presentation_outline.md  # outline for the final slide deck
-│
-└── reports/                # 📄 longer reports or exported notebooks (e.g. PDF or markdown)
+└── docs/                   # 📄 tRNASec overview and bibliography
 ```
 
----
+--
 
 ---
 
