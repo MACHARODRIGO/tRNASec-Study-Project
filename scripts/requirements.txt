@@ -1,0 +1,13 @@
+numpy
+pandas
+biopython
+scikit-learn
+matplotlib
+seaborn
+tqdm
+requests
+ratelimit
+logomaker
+ete3
+cairosvg
+viennarna   # Python bindings for ViennaRNA
