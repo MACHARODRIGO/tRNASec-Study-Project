@@ -1,6 +1,6 @@
 # 🧬 tRNA-Sec Study Project 🔬
 
-This repository provides a reproducible framework to explore the biology, structural features, and computational analysis of **tRNA-Sec** (the tRNA that incorporates the non-canonical amino acid selenocysteine) and related small RNAs. It's organized around specific hiring assessment goals and is intended as a starting point for further work.
+This repository provides a reproducible framework to explore the biology, structural features, and computational analysis of **tRNA-Sec** (the tRNA that incorporates the non-canonical amino acid selenocysteine) and related small RNAs.
 
 ---
 
