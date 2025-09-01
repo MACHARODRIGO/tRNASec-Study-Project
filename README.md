@@ -48,7 +48,8 @@ project/
 
 ## 🛠️ Installation and Prerequisites
 
-This project is designed to be executed in a **Python 3.9+** environment. To install the required packages:
+This project requires both **Python libraries** and some **external command-line tools**.  
+We recommend Python **3.9+** and a virtual environment.
 
 1.  **Clone this repository**:
     ```bash
@@ -64,8 +65,14 @@ This project is designed to be executed in a **Python 3.9+** environment. To ins
     ```bash
     pip install -r requirements.txt
     ```
-    Recommended dependencies include: `numpy`, `pandas` for data handling; `biopython` for sequence parsing and alignments; `scikit-learn` for basic machine learning tasks; `matplotlib`, `seaborn` for plotting. Command-line tools like **ViennaRNA**, **NUPACK**, and **RNAstructure** are also required.
+---
+##⚙️ External Tools (must be installed separately)
 
+Some analyses require third-party bioinformatics software. Make sure these are installed and available in your $PATH:
+
+1. Infernal (cmalign, esl-reformat) → structural alignments
+2. FastTree → fast phylogenetic tree construction
+3. ViennaRNA (RNAfold, RNAsubopt, RNAplot) → RNA secondary structure prediction
 ---
 
 ## 🚀 Usage
@@ -77,34 +84,38 @@ Jupyter notebooks in the `notebooks/` folder should be designed to run from the 
 -   `trnasec_structural_exploration.ipynb`: Analyze secondary and tertiary structures of tRNA-Sec across domains of life, identify non-canonical motifs, and (optionally) run MD simulations.
 - `rna_ml_exploration.ipynb`: Extract sequence/structural features, perform clustering of RNAs, and train baseline ML classifiers for exploratory prediction tasks.
 
+- 🚀 Usage
+
+Main notebooks and their purposes:
+
+-   `fetch_and_explore.ipynb`:  ✅ → Query RNAcentral for tRNA-Sec sequences, store in data/raw/.
+-   `align_sequences_prediction.ipynb`: ⏳ → Perform alignments with Infernal, build phylogenetic trees, run secondary structure predictions.
+-   `trnasec_structural_exploration.ipynb`: ✅ → Analyze secondary and tertiary structures of tRNA-Sec across domains of life.
+-   `rna_ml_exploration.ipynb`: 🚧 → Extract features, perform clustering, and train baseline ML classifiers. (Currently functional for basic classification; more complex features planned.)
 ---
-## 📌 Work in Progress
-- `fetch_and_explore.ipynb`: ✅ completed
-- `align_sequences_prediction.ipynb`: ⏳ completed
-- `trnasec_structural_exploration.ipynb`: ✅ analysis complete, refactor pending
-- `rna_ml_exploration.ipynb`: 🚧 planned  
-  - Feature extraction (motifs, modifications, structure).  
-  - Unsupervised clustering of RNAs.  
-  - Baseline ML classifiers (logistic regression, RF, MLP).  
-  - Run locally (CPU) or on Colab (GPU).  
----
+📌 Current Status
 
-## ✅ Reproducibility
-
-
----
-
-## ⚖️ License
-
-This project is released under the **MIT License**. See the `LICENSE` file for details.
+-  ✅ Most notebooks are functional and reproducible.
+-  🛠️ Some steps are in progress (especially advanced structural analysis and ML feature engineering).
+-  📈 All notebooks can already be run end-to-end, though results will improve as new features are added.
 
 ---
 
 ## 🙏 Acknowledgements
 
-This repository draws on open-source software and publicly available databases. Refer to the `reports/bibliography.md` for citations of the literature and resources used.
+This repository draws on open-source software and publicly available databases.  
+
+For references to tools and libraries used in this project, see [docs/bibliography.md](docs/bibliography.md).
+
+For a biological overview of tRNA-Sec, see [docs/trnasec_overview.md](docs/trnasec_overview.md).
 
 
+For questions, feedback, or collaboration opportunities, please contact:  
+
+📧 **Rodrigo Machado Birollo** — rodrigomachadobirollo@gmail.com
+
+
+I hope you enjoy reading this!
 
 
 
