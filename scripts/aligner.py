@@ -218,7 +218,7 @@ def find_maximal_clades(clades):
     return maximal
 
 
-def interpret_tree_markdown(tree_file, min_clade_size=4, support_cutoff=0.7, report_file="../results/tables/tree_report.md"):
+def interpret_tree_markdown(tree_file, min_clade_size=4, support_cutoff=0.8, report_file="../results/tables/tree_report.md"):
     """Interpret phylogenetic tree and generate a Markdown report.
        Shows it nicely in Jupyter Notebook and saves it to disk.
     """
@@ -244,19 +244,6 @@ def interpret_tree_markdown(tree_file, min_clade_size=4, support_cutoff=0.7, rep
     for i, (sp, c) in enumerate(sp_counts.most_common(10), start=1):
         report.append(f"| {i} | {sp} | {c} |")
 
-    # --- Largest clades
-    clades = find_maximal_clades(tree.get_nonterminals())
-    big_clades = [c for c in clades if len(c.get_terminals()) >= min_clade_size]
-
-    if big_clades:
-        report.append("\n## 🌳 Major clades detected\n")
-        report.append(f"Clades with at least **{min_clade_size} sequences** and support > {support_cutoff}:\n")
-        for i, cl in enumerate(big_clades, start=1):
-            sp_list = [str(leaf).split('|')[1] if '|' in str(leaf) else str(leaf) for leaf in cl.get_terminals()]
-            sp_summary = Counter(sp_list).most_common(3)
-            support = getattr(cl, "confidence", None)
-            report.append(f"- **Clade {i}:** {len(cl.get_terminals())} seqs | Support: {support if support else 'n/a'}")
-            report.append(f"  - Main species: {', '.join([f'{s} ({c})' for s, c in sp_summary])}")
 
     # Save to file
     os.makedirs(os.path.dirname(report_file), exist_ok=True)
